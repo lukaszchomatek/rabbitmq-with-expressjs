@@ -23,6 +23,6 @@ app.get('/fibonacci/:number', function(req, res) {
 });
 
 const server = require('http').createServer(app);
-server.listen(3000, function() {
-  console.log('App started at 3000.');
+server.listen(3001, function() {
+  console.log('App started. at 3001');
 });
