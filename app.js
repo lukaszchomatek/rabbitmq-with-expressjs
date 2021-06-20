@@ -6,7 +6,7 @@ const app = express();
 const amqpClient = require('./amqpClient');
 
 let channel;
-amqpClient.createClient({ url: 'amqp:localhost' })
+amqpClient.createClient({ url: 'amqp://localhost' })
   .then(ch => {
     // channel is kept for later use
     channel = ch;
